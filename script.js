@@ -29,7 +29,7 @@ function paintTree() {
 function paintLeafs() {
   c.fillStyle = 'green';
   c.beginPath();
-  c.ellipse(midX, midY * 1.45, midX / 7, midY / 2.7, 0, 0, 2 * Math.PI);
+  c.ellipse(midX, midY * 1.45, midX / 7, midY / 2.7, 0, 1.8, 2.43 * Math.PI);
   c.fill();
   c.stroke();
 }
