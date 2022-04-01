@@ -21,13 +21,16 @@ function paintSquare() {
 
 function paintTree() {
   c.fillStyle = 'brown';
-  c.fillRect(midX / 1.02, midY * 1.8, midX / 15, midY);
+  c.rect(midX * 0.97, midY * 1.8, midX / 15, midY);
+  c.fill();
+  c.stroke();
 }
 
 function paintLeafs() {
   c.fillStyle = 'green';
   c.beginPath();
-  c.ellipse(midX, midY * 1.3, 50, 75, 0, 0, 2 * Math.PI);
+  c.ellipse(midX, midY * 1.45, midX / 7, midY / 2.7, 0, 0, 2 * Math.PI);
+  c.fill();
   c.stroke();
 }
 
